@@ -20,7 +20,7 @@ done
 # Install dependencies if the flag is not set to skip installation
 if [ "$install_dependencies" = true ]; then
     sudo npm install
-    sudo npm i -g serve
+    sudo npm i -g serve@13.0.4
 fi
 
 sudo node back/app.bundle.js &
