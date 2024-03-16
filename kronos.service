@@ -2,7 +2,6 @@
 Description=Kronos Start Script
 
 [Service]
-Type=oneshot
 ExecStart=/usr/local/bin/app/kronos.sh
 StandardOutput=inherit
 StandardError=inherit

@@ -1,11 +1,13 @@
 #!/bin/bash
 
-npm install
-
 npm i -g serve
 
-cp -r ./app /usr/local/bin
-chmod +x /usr/local/bin/app/kronos.sh
+cd ./app
+npm install
+cd ../
+
+sudo cp -r ./app /usr/local/bin
+sudo chmod +x /usr/local/bin/app/kronos.sh
 sudo cp kronos.service /etc/systemd/system/
 
 systemctl daemon-reload
