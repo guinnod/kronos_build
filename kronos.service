@@ -3,6 +3,7 @@ Description=Kronos Start Script
 
 [Service]
 ExecStart=/usr/local/bin/app/kronos.sh
+WorkingDirectory=/usr/local/bin/app
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
