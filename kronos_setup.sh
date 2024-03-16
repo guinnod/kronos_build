@@ -4,9 +4,9 @@ npm install
 
 npm i -g serve
 
-cp ./app /usr/local/bin
+cp -r ./app /usr/local/bin
 chmod +x /usr/local/bin/app/kronos.sh
-cp kronos.service /etc/systemd/system/
+sudo cp kronos.service /etc/systemd/system/
 
 systemctl daemon-reload
 
